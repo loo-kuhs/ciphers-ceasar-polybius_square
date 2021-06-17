@@ -55,8 +55,8 @@ export function run (args) {
         if (isEncoding) {
             // Busca el caracter  en el arreglo alfanumerico, y en base
             // a esa posicion calcula X y Y coordinadas en la tabla
-            char = char.toLowerCase()
-            if (char.match(/^[a-z0-9]$/)) {
+            //char = char.toLowerCase()
+            if (char.match(/^[a-z0-9A-Z\w]$/)) {
                 const letterPos = alphanumeric.indexOf(char.toString())
                 const x = Math.floor(letterPos / alphaGridSize) + 1
                 const y = (letterPos % alphaGridSize) + 1

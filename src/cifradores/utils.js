@@ -2,23 +2,23 @@
 
 export const ALPHA = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+    'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 ]
 
 export const ALPHAMAYUS = [
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-    'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+    'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
 ]
 
 export const NUMBERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-export const ALPHANUMERIC = [].concat(ALPHA, NUMBERS)
+export const ALPHANUMERIC = [].concat(ALPHA, NUMBERS, ALPHAMAYUS)
 const TOTAL_ALPHA = ALPHA.length
 
 // ALPHAGRID --> Una cuadrícula de 6 x 6 del alfabeto y los números del 0 al 9
 
 export const ALPHAGRID = (() => {
     // Necesitamos crear una cuadricula de 6x6 de los caracteres alfanumericos
-    const GRID_SIZE = 6
+    const GRID_SIZE = 8
     let grid = new Array(GRID_SIZE)
 
     // Indice actual del arreglo alfanumerico

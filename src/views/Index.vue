@@ -149,7 +149,7 @@ export default {
       if (type === 'copy:success') {
         message = `Texto de ${res.cipher.NAME} copiado al portapapeles`
       } else if (type === 'copy:error') {
-        message = `Error copying ${res.cipher.NAME} text`
+        message = `Error copiandio el texto de ${res.cipher.NAME} `
       }
 
       this.toast.isVisible = true
