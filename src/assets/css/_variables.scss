@@ -1,0 +1,20 @@
+$color__white: #FFFFFF;
+$color__gray: #F4F4F4;
+$color__blue--vibrant: #1061ff;
+$color__blue--darker: #001D56;
+$color__blue--darker--faded: rgba($color__blue--darker, 0.2);
+$color__yellow: #FFEEC3;
+$color__yellow--darker: darken($color__yellow, 15%);
+$color__purple: #6e3ff5;
+$color__purple--faded: rgba($color__purple, 0.2);
+$color__purple--xtra-faded: rgba($color__purple, 0.1);
+$color__pink: #FFF5F9;
+$color__plum: #d40050;
+
+$color__background: $color__white;
+$color__text: $color__blue--darker;
+$color__link: $color__blue--vibrant;
+$color__link--hover: $color__yellow;
+$color__selection: $color__purple--faded;
+$color__toggle--encode: $color__plum;
+$color__toggle--decode: $color__purple;

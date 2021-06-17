@@ -5,20 +5,41 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit 'src/**/*.spec.js'",
+    "test:unit:watch": "vue-cli-service test:unit 'src/**/*.spec.js' --watch"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "focus-trap": "^5.0.2",
+    "prismjs": "^1.17.1",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-clipboard2": "^0.3.0",
+    "vue-fixed-header": "^3.2.2",
+    "vue-markdown": "^2.2.4",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "^3.10.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
+    "@vue/cli-plugin-unit-mocha": "^3.10.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-prismjs": "^1.1.1",
+    "chai": "^4.1.2",
+    "chai-spies": "^1.0.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "raw-loader": "^3.1.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
@@ -32,7 +53,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off" 
+    }
   },
   "browserslist": [
     "> 1%",
