@@ -32,6 +32,7 @@
 <script>
 // https://github.com/davidtheclark/focus-trap
 import createFocusTrap from 'focus-trap'
+import { onMounted, onBeforeUnmount } from 'vue'
 
 export default {
   name: 'modal',
@@ -48,10 +49,10 @@ export default {
     $body.classList.add('body--with-modal')
 
     this.focusTrap = createFocusTrap(this.$el, {})
-    this.focusTrap.activate()
+    this.focusTrap.activated()
   },
-  beforeDestroy () {
-    this.focusTrap.deactivate()
+  beforeUnmount () {
+    this.focusTrap.deactivated()
 
     let $body = document.getElementsByTagName('body')[0]
     $body.classList.remove('body--with-modal')
