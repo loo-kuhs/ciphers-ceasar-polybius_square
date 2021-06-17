@@ -1,15 +1,15 @@
-$color__white: #FFFFFF;
+$color__white: #c7f1e0;
 $color__gray: #F4F4F4;
-$color__blue--vibrant: #1061ff;
+$color__blue--vibrant: #000000;
 $color__blue--darker: #001D56;
 $color__blue--darker--faded: rgba($color__blue--darker, 0.2);
-$color__yellow: #FFEEC3;
+$color__yellow: #b0edf5;
 $color__yellow--darker: darken($color__yellow, 15%);
-$color__purple: #6e3ff5;
+$color__purple: #703ff5;
 $color__purple--faded: rgba($color__purple, 0.2);
 $color__purple--xtra-faded: rgba($color__purple, 0.1);
-$color__pink: #FFF5F9;
-$color__plum: #d40050;
+$color__pink: #c7f1e0;
+$color__plum: #f70808ce;
 
 $color__background: $color__white;
 $color__text: $color__blue--darker;
