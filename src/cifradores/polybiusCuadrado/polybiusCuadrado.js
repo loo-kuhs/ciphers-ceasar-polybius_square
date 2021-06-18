@@ -9,7 +9,7 @@ export { default as ABOUT_TEMPLATE } from 'raw-loader!./polybiusCuadrado.md'
 
 // Variables locales 
 
-const __ENCODE_REGEX = /([a-zA-Z0-9]+)/gm
+const __ENCODE_REGEX = /([a-zA-Z0-9\u00C0-\u00FF]+)/gm
 const __DECODE_REGEX = /^[1-8]{2}(\s[1-8]{2})*$/
 
 // Argumentos por defecto
