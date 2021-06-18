@@ -33,7 +33,7 @@ export function run (args) {
         return {
             isSuccess: false,
             outputStr: null,
-            errorStr: `${NAME} requiere al menos una letra o algun numero. (Caracteres especiales se omitiran.)` 
+            errorStr: `${NAME} requiere al menos una letra o algún número. (Caracteres especiales y espacios se omitirán.)` 
         }
     }
 
@@ -41,7 +41,7 @@ export function run (args) {
         return {
             isSuccess: false,
             outputStr: null,
-            errorStr: `${NAME} requiere una entrada de solo numeros 1-6, en pares, y separados por espacios. Por ejemplo: 15 46 11 31 34 26 15.`
+            errorStr: `${NAME} requiere una cadena de solo números 1-8, en pares, y separados por espacios. Por ejemplo: 81 15 14 11 35 33 18.`
         }
     }
     
@@ -49,7 +49,7 @@ export function run (args) {
     inputStr = inputStr.replace(/[\s]+/gi, '')
 
     // Si estamos codificando necesitamos ir letra por letra. PERO,
-    // Si estamos decodificando necesitamos cada parra de numeros.
+    // Si estamos decodificando necesitamos cada par de numeros.
     const increment = (isEncoding) ? 1 : 2
     utils.forEachCharacter(inputStr, increment, (i, char) => {
         if (isEncoding) {

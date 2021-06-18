@@ -5,7 +5,7 @@ import * as index from './index'
 
 describe('ciphers:index', () => {
     let expectedCipherKeys = [
-        'polybius-cruadrado'
+        'polybius-cuadrado'
     ]
 
     it ('debe tener claves de cifrado en cualquier orden', () => {
