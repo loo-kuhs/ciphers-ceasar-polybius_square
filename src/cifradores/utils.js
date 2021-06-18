@@ -49,7 +49,7 @@ export function isLetter (str) {
         return false
     }
 
-    const matches = str.match(/^[A-Za-z]$/)
+    const matches = str.match(/^[a-zA-Z\u00C0-\u00FF]$/)
     return (matches) ? matches > 0 : false
 }
 
