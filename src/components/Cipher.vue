@@ -118,7 +118,7 @@ export default {
       cipherInputs: (cipherHasInputs) ? cipher.INPUTS : null,
       cipherInputDefaults: (cipherHasInputs) ? cipher.DEFAULTS.inputs : null,
       cipherAriaLabel: `${cipher.NAME} Output`,
-      cipherLinkTitle: `Learn more about ${cipher.NAME}`,
+      cipherLinkTitle: `Acerca de ${cipher.NAME}`,
       copyBtnLabel: `Copiar salida de ${cipher.NAME}`,
       reverseBtnLabel: `Revertir salida de ${cipher.NAME}`,
       textareaLabel: `${cipher.NAME} output`,
