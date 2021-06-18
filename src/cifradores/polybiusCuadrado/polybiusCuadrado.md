@@ -11,7 +11,7 @@
 **Numeros y Emojis**
 Simbolos y emojis son **removidos** por este cifrador
 
-**Espacios son removidos**
+**Los espacios son removidos**
 Todos los espacios son removidos por este cifrador durante la codificacion
 
 ## Formula
