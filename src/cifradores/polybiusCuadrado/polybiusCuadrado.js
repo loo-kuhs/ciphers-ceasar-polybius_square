@@ -73,6 +73,7 @@ export function run (args) {
 
     output = (isEncoding) ? output.join(' ') : output.join('')
 
+    console.log(output);
     return {
         isSuccess: true,
         outputStr: output,

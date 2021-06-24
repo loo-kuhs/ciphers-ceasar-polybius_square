@@ -5,6 +5,7 @@ import * as index from './index'
 
 describe('ciphers:index', () => {
     let expectedCipherKeys = [
+        'caesar',
         'polybius-cuadrado'
     ]
 

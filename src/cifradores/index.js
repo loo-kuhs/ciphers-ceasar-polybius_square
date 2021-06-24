@@ -1,6 +1,8 @@
+import * as caesar from './caesar'
 import * as polybiusCuadrado from './polybiusCuadrado'
 
 let cifradores = [
+    caesar,
     polybiusCuadrado
 ]
 
