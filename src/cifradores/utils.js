@@ -52,7 +52,7 @@ export function mod (a, b) {
     return ((a % b) + b) % b
 }
 
-// esLetra
+// isLetter
 // Revisa si el string tiene solo letras
 export function isLetter (str) {
     if (typeof str !== 'string') {
@@ -60,6 +60,17 @@ export function isLetter (str) {
     }
 
     const matches = str.match(/^[a-zA-Z0-9\u00F1\u00D1]$/)
+    return (matches) ? matches.length > 0 : false
+}
+
+// isNumber
+// Revisa si hay numeros en la cadena
+export function isNumber (num){
+    if (typeof num !== 'number') {
+        return false
+    }
+
+    const matches = num.match(/^[0-9]$/)
     return (matches) ? matches.length > 0 : false
 }
 
